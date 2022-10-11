@@ -8,7 +8,7 @@ $(document).ready(function() {
       $('.counter').css("color", "#000000c8");
     }
     if (counter > 140) {
-      $(this).siblings('.form-footer').children('.counter').css("color", "firebrick");
+      $(this).siblings('.form-footer').children('.counter').css("color", "#fb5947");
     }
   });
 

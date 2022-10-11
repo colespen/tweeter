@@ -35,12 +35,87 @@ body {
 
 }
 
-.tweets-main {
+/* TWEETS!! ********************** */
+
+article.tweet {
+  width: 92%;
+  height: 245px;
+  padding: 0px 15px 15px 15px;
+
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgb(81, 81, 81);
+}
+
+article.tweet header {
+  /* padding: 10px; */
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info {
+  height: 100px;
+  /* padding: 10px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.user-id {
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+}
+
+.tweet span {
+  font-size: 23px;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+article.tweet h5 {
+  color: #c3cede;
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+#tweet-img {
+  max-width: 27%;
+  min-width: 10%;
+}
+
+article.tweet p {
+  padding-left: 20px;
+}
+
+.horiz-line-tweet {
+  margin: 0 10px 0 10px;
+  border-bottom: 3px solid rgb(132, 132, 132);
+  padding-top: 20px;
+}
+
+article.tweet footer {
+  color: rgba(0, 0, 0, 0.588);
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+article.tweet .tweet-icons {
+  color: #2846a9;
+  padding-top: 25px;
+}
+
+
+/* article.tweet {
   width: 90%;
-  /* background-color: red; */
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} 
+*/
