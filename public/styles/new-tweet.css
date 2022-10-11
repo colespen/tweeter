@@ -52,13 +52,18 @@
   height: 35px;
   font-family: 'Bungee', cursive;
   font-size: 20px;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
   color: white;
   background-color: #394b88;
   border-radius: 3px;
 }
 
 .form-footer button:hover {
-  background-color: #4570ff;
+  background-color: #2f74ff;
 }
 .counter{
   font-family: 'Bungee', cursive;

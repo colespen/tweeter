@@ -48,6 +48,10 @@ article.tweet {
   border: 3px solid rgb(81, 81, 81);
 }
 
+article.tweet:hover {
+  box-shadow:rgb(81, 81, 81);
+}
+
 article.tweet header {
   /* padding: 10px; */
   height: 160px;
@@ -61,6 +65,7 @@ article.tweet header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .user-id {
@@ -76,6 +81,7 @@ article.tweet header {
 }
 
 article.tweet h5 {
+  /* margin-top: 0px; */
   color: #c3cede;
   font-size: 24px;
   padding-right: 10px;
@@ -97,17 +103,29 @@ article.tweet p {
 }
 
 article.tweet footer {
+  font-size: 17px;
   color: rgba(0, 0, 0, 0.588);
+  padding-top: 8px;
   padding-right: 10px;
+
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-article.tweet .tweet-icons {
-  color: #2846a9;
-  padding-top: 25px;
+article.tweet footer p {
+  margin-top: 0;
 }
+
+.tweet-icons {
+  color: #2846a9;
+}
+
+.tweet-icons i:hover {
+  color: #4aa4ff;
+}
+
 
 
 /* article.tweet {
