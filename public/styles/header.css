@@ -1,0 +1,25 @@
+.header-main {
+  /* box model */
+  height: 490px;
+  width: 100%;
+  background-color: #2c523f;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/buried.png"); */
+
+  /* background-color: #234131; */
+  padding-top: 95px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.286);
+  /* think of items as containers */
+}
+
+.header-main div {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.header-main div h2 {
+  color: black;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 0.5px 2px #85a697
+}

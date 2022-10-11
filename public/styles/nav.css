@@ -1,0 +1,36 @@
+.navbar {
+  /* box model */
+  height: 90px;
+  width: 100%;
+  background-color: #2d3d71;
+  color: #FFFFFF;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.496);
+
+  padding: 1em 1.5em 0 1.5em;
+  position: fixed;
+  /* flex properties */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.navbar-logo {
+  font-family: 'Bungee', cursive;
+  font-size: 1.5em;
+  
+  margin-top: .1em;
+}
+
+
+.navbar-menu {
+  /* flex properties */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  list-style: none;
+}
+
+.navbar-menu i {
+  color: rgb(251, 89, 71);
+}
