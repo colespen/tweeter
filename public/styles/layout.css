@@ -41,15 +41,14 @@ article.tweet {
   width: 92%;
   height: 245px;
   padding: 0px 15px 15px 15px;
-
+  border: 3px solid rgb(81, 81, 81);
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  border: 3px solid rgb(81, 81, 81);
 }
 
 article.tweet:hover {
-  box-shadow: 10px 10px 1px rgba(33,33,33,.2); 
+  box-shadow: 10px 10px 1px rgba(0, 0, 167, 0.2); 
   transition: box-shadow .3s;
 }
 
@@ -94,11 +93,12 @@ article.tweet h5 {
 }
 
 article.tweet p {
+  font-weight: 600;
+  font-size: 20px;
   padding-left: 20px;
 }
 
 .horiz-line-tweet {
-  margin: 0 10px 0 10px;
   border-bottom: 3px solid rgb(132, 132, 132);
   padding-top: 20px;
 }
@@ -116,10 +116,12 @@ article.tweet footer {
 }
 
 article.tweet footer p {
+  font-size: 17px;
   margin-top: 0;
 }
 
 .tweet-icons {
+  padding-top: 2px;
   color: #2846a9;
 }
 
