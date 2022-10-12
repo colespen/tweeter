@@ -24,15 +24,13 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
+ 
 .container {
   background-color: #f4f1ec;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 
 /* TWEETS!! ********************** */
@@ -45,10 +43,13 @@ article.tweet {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+  
+  box-shadow: -3px -3px 0px rgb(218, 222, 235); 
+  transition: box-shadow .15s;
 }
 
 article.tweet:hover {
-  box-shadow: 10px 10px 1px rgba(0, 0, 167, 0.2); 
+  box-shadow: 12px 12px 1.5px rgba(0, 0, 167, 0.2); 
   transition: box-shadow .3s;
 }
 
@@ -82,7 +83,7 @@ article.tweet header {
 
 article.tweet h5 {
   /* margin-top: 0px; */
-  color: #c3cede;
+  color: #b4c6e0;
   font-size: 24px;
   padding-right: 10px;
 }
@@ -99,7 +100,7 @@ article.tweet p {
 }
 
 .horiz-line-tweet {
-  border-bottom: 3px solid rgb(132, 132, 132);
+  border-bottom: 3px solid rgb(107, 107, 107);
   padding-top: 20px;
 }
 
@@ -116,7 +117,7 @@ article.tweet footer {
 }
 
 article.tweet footer p {
-  font-size: 17px;
+  font-size: 16px;
   margin-top: 0;
 }
 
@@ -126,7 +127,7 @@ article.tweet footer p {
 }
 
 .tweet-icons i:hover {
-  color: #4aa4ff;
+  color: #8bbef0;
 }
 
 
