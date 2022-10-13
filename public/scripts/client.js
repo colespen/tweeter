@@ -14,15 +14,14 @@ $(document).ready(function() {
     if (!input) {
       const $errNull = $('<span>There\'s nothing here. Please elaborate.</span>').hide();
       $(".container").prepend($errNull);
-      return $errNull.slideDown();
+      return $errNull.slideDown(600);
     }
     if (input.length > 140) {
       const $errLength = $('<span>Too many things. Please write a bit less.</span>').hide();
       $(".container").prepend($errLength);
-      return $errLength.slideDown();
+      return $errLength.slideDown(600);
     }
-    $('.container > span').slideUp("fast");
-
+    $('.container > span').slideUp(150);
 
     $.ajax({
       url: '/tweets', 

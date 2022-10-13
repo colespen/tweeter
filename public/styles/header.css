@@ -23,8 +23,8 @@
   letter-spacing: 1.5px;
   /* text-shadow: 1px 0.5px 2px rgb(135, 166, 152) */
   text-shadow:
-  rgba(93, 115, 105, 0.701) -1px -1px 0.5px,
-  rgba(36, 44, 41, 0.728) 1px -1px 0.5px,
-  rgba(69, 85, 79, 0.45) -1px 1px 0.5px,
-  rgba(73, 90, 83, 0.624) 1px 1px 0.5px;
+  rgba(93, 115, 105, 0.556) -0.5px -0.5px 0.5px,
+  rgba(42, 53, 49, 0.816) 1.5px -1.5px 0.5px,
+  rgba(85, 136, 117, 0.424) -1px 0px 0.5px,
+  rgba(73, 90, 83, 0.691) 1px 1px 0.5px;
 }
