@@ -12,6 +12,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 /*
  * Global layout stuff
  */
@@ -21,10 +22,11 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
 }
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
- 
+
 .container {
   background-color: #f4f1ec;
   display: flex;
@@ -37,33 +39,32 @@ body {
 
 #tweets-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   flex-wrap: wrap;
-  
+  align-items: center;
+  flex-direction: column;
 }
 
 article.tweet {
-  width: 700px;
-  height: 245px;
-  padding: 0px 15px 15px 15px;
+  width: 90%;
+  /* height: fit-content; */
+  /* padding: 0px 15px 15px 15px; */
+  padding: 0 2% 2% 2%;
   border: 3px solid rgb(81, 81, 81);
-  margin-top: 50px;
+  margin-top: 43px;
   display: flex;
   flex-direction: column;
-  
-  box-shadow: -3px -3px 0px rgb(218, 222, 235); 
+  box-shadow: -3px -3px 0px rgb(218, 222, 235);
   transition: box-shadow .15s;
 }
 
 article.tweet:hover {
-  box-shadow: 12px 12px 1.5px rgba(0, 0, 167, 0.2); 
+  box-shadow: 12px 12px 1.5px rgba(0, 0, 167, 0.2);
   transition: box-shadow .3s;
 }
 
 article.tweet header {
   /* padding: 10px; */
-  height: 160px;
+  /* height: 160px; */
   display: flex;
   flex-direction: column;
 }
@@ -91,14 +92,20 @@ article.tweet header {
 
 article.tweet h5 {
   /* margin-top: 0px; */
+  /* padding-right: 10px; */
+  margin-top: 7%;
+  padding-right: 2%;
   color: #b4c6e0;
   font-size: 24px;
-  padding-right: 10px;
 }
 
 #tweet-img {
-  max-width: 27%;
-  min-width: 10%;
+  scale: 75%;
+  object-fit: cover;
+  /* max-width: 20%; */
+  /* min-width: 10%;  */
+  /* max-width: 27%; */
+  /* min-width: 10%; */
 }
 
 article.tweet p {
@@ -106,6 +113,7 @@ article.tweet p {
   font-weight: 600;
   font-size: 20px;
   padding-left: 20px;
+  margin: 0;
 }
 
 .horiz-line-tweet {
@@ -136,3 +144,12 @@ article.tweet footer p {
 .tweet-icons i:hover {
   color: #98cafb;
 }
+
+/* MEDIA QUERY */
+
+/* @media only screen and (max-width: 768px) {
+  #tweets-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+} */

@@ -98,7 +98,7 @@ $(document).ready(function() {
       <header>
         <div class="user-info">
           <div class="user-id">
-            <img src="/images/wolf-user.png" id="tweet-img">
+            <img src=${tweetObj.user.avatars} id="tweet-img">
             <span>${escUser(tweetObj.user.name)}</span>
           </div>
           <h5>${escHandle(tweetObj.user.handle)}</h5>
