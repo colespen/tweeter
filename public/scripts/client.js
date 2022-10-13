@@ -6,6 +6,10 @@
 
 $(document).ready(function() {
 
+  
+
+
+  ////    submit form ajax POST
   $('.new-tweet form').submit(function(event) {
     let serialized = $(this).serialize();
     let input = $(this).find('#tweet-text').val();
@@ -14,17 +18,17 @@ $(document).ready(function() {
     if (!input) {
       const $errNull = $('<span>There\'s nothing here. Please elaborate.</span>').hide();
       $(".container").prepend($errNull);
-      return $errNull.slideDown(600);
+      return $errNull.slideDown(500);
     }
     if (input.length > 140) {
       const $errLength = $('<span>Too many things. Please write a bit less.</span>').hide();
       $(".container").prepend($errLength);
-      return $errLength.slideDown(600);
+      return $errLength.slideDown(500);
     }
     $('.container > span').slideUp(150);
 
     $.ajax({
-      url: '/tweets', 
+      url: '/tweets',
       // /tweets route mounted as prefix in index.js
       method: 'POST',
       data: serialized,
@@ -34,58 +38,56 @@ $(document).ready(function() {
         loadTweets();
         console.log('ajax POST SUCCESS', data);
       },
-      error: function (errorMessage) {
+      error: function(errorMessage) {
         console.log('ajax POST ERROR', errorMessage);
       }
     });
   });
 
-    ////    Load Tweets
-    const loadTweets = () => {
-      $.ajax({
-        url: '/tweets',
-        method: 'GET',
+  ////    Load Tweets ajax GET
+  const loadTweets = () => {
+    $.ajax({
+      url: '/tweets',
+      method: 'GET',
 
-        success: function(data) { 
-          renderTweets(data); // OR data.reverse()?
-          console.log('ajax GET SUCCESS', data);
-        },
-        error: function (errorMessage) {
-          console.log('ajax GET ERROR', errorMessage);
-        }
-      });
-    }
-    loadTweets();
+      success: function(data) {
+        renderTweets(data); // OR data.reverse()?
+        console.log('ajax GET SUCCESS', data);
+      },
+      error: function(errorMessage) {
+        console.log('ajax GET ERROR', errorMessage);
+      }
+    });
+  };
+  loadTweets();
 
   ////     loops through tweets 
   ////    calls createTweetElement for each 
   ////    takes return and appends to container
   const renderTweets = function(tweetArray) {
     for (const tweet of tweetArray) {
-      
+
       let makeTweet = createTweetElement(tweet);
       $('#tweets-container').append(makeTweet);
     }
   };
 
   ////    XSS Prevention fn
-  const escUser = function (str) {
+  const escUser = function(str) {
     let div = document.createElement("span");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
-  const escHandle = function (str) {
+  const escHandle = function(str) {
     let div = document.createElement("h5");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
-  const escContent= function (str) {
+  const escContent = function(str) {
     let div = document.createElement("p");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
-
-
 
   ////    takes in tweet obj
   ////    returns tweet <article>
@@ -118,9 +120,16 @@ $(document).ready(function() {
     return $tweetStructure;
   };
 
+////    HIDE FORM then OPEN
 
-  // Test / driver code (temporary). 
-  // const $tweet = createTweetElement(tweetObj);
+  $('.new-tweet').hide();
 
-  // console.log(renderTweets(data));
+  // $('.navbar-menu li').hover(function() {
+  //   ('.fa-angles-down').toggle( "bounce", { times: 3 }, "slow" );
+  // });
+
+  $('.navbar-menu li').click(function() {
+    $('.new-tweet').slideToggle(550);
+  });
+
 });

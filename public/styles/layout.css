@@ -5,8 +5,6 @@
  */
 html {
   box-sizing: border-box;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
 }
 
 *,
@@ -138,15 +136,3 @@ article.tweet footer p {
 .tweet-icons i:hover {
   color: #98cafb;
 }
-
-
-
-/* article.tweet {
-  width: 90%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} 
-*/

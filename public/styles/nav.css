@@ -1,6 +1,6 @@
 .navbar {
   /* box model */
-  height: 90px;
+  height: 80px;
   width: 100%;
   background-color: #2d3d71;
   color: #FFFFFF;
@@ -11,32 +11,58 @@
   /* flex properties */
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
 
 .navbar-logo {
   font-family: 'Bungee', cursive;
   font-size: 1.5em;
   text-shadow:
-  rgb(136, 136, 136) -1px -1px 0,
-  #000 1px -1px 0,
-  #000 -1px 1px 0,
-  rgb(186, 186, 186) 1px 1px 0;
-    
+    rgb(136, 136, 136) -1px -1px 0,
+    rgb(40, 40, 40) 1px -1px 1.5px,
+    #000 -1px 1px 0,
+    rgb(186, 186, 186) 1px 1px 0;
+
   margin-top: .1em;
 }
 
 
 .navbar-menu {
-  /* flex properties */
+  font-size: 22px;
+  margin-top: 64px;
+  padding-left: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   list-style: none;
+  /* border: 1px solid red; */
 }
 
-.navbar-menu i {
+.fa-angles-down {
+  font-size: 27px;
   color: #ff3b26;
+  width: 200px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
 }
 
+/* Button Animate */
+
+
+
+
+.fa-angles-down:hover {
+  -webkit-animation: action 0.6s infinite  alternate;
+  animation: action 0.6s infinite  alternate;
+}
+
+@-webkit-keyframes action {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(10px); }
+}
+
+@keyframes action {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(10px); }
+}

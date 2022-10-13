@@ -1,6 +1,6 @@
 .header-main {
   /* box model */
-  height: 490px;
+  height: 420px;
   width: 100%;
   background-color: #2c523f;
   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
@@ -13,18 +13,20 @@
 }
 
 .header-main div {
+  height: 60%;
   display: flex;
   justify-content: center;
   
 }
 
 .header-main div h2 {
+  margin: 15px;
   color: black;
   letter-spacing: 1.5px;
   /* text-shadow: 1px 0.5px 2px rgb(135, 166, 152) */
   text-shadow:
   rgba(93, 115, 105, 0.556) -0.5px -0.5px 0.5px,
-  rgba(42, 53, 49, 0.816) 1.5px -1.5px 0.5px,
+  rgba(42, 53, 49, 0.816) 1.5px -1.5px 1px,
   rgba(85, 136, 117, 0.424) -1px 0px 0.5px,
   rgba(73, 90, 83, 0.691) 1px 1px 0.5px;
 }
