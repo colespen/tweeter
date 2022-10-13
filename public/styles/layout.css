@@ -80,23 +80,22 @@ article.tweet header {
 
 .user-id {
   display: flex;
-  align-self: center;
-  flex-direction: row;
+  align-items: center;
 }
 
 .tweet span {
   font-size: 23px;
-  padding-left: 10px;
-  padding-top: 15px;
+  /* padding-left: 10px;
+  padding-top: 15px; */
 }
 
 article.tweet h5 {
   /* margin-top: 0px; */
   /* padding-right: 10px; */
-  margin-top: 7%;
-  padding-right: 2%;
+  /* margin-top: 7%; */
+  /* padding-right: 2%; */
   color: #b4c6e0;
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 
 #tweet-img {
@@ -147,9 +146,16 @@ article.tweet footer p {
 
 /* MEDIA QUERY */
 
+@media only screen and (max-width: 420px) {
+  article.tweet p {
+    font-size: 17px;
+  }
+}
+  
 /* @media only screen and (max-width: 768px) {
   #tweets-container {
     display: flex;
     flex-wrap: wrap;
   }
-} */
+}  
+*/
