@@ -69,25 +69,27 @@
     </header>
 
     <!-- Page-specific (main) content here -->
-      <main class="container">
-        <section class="new-tweet">
-          <!-- <h2>Compose Tweet</h2> -->
-          <form method="post" action="/tweets/">
-            <label for="tweet-text">What are you humming about?</label>
-            <textarea name="text" id="tweet-text"></textarea>
+    <main class="container">
 
-            <div class="horiz-line"></div>
+      <section class="new-tweet">
+        <!-- <h2>Compose Tweet</h2> -->
+        <form method="post" action="/tweets/">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
 
-            <div class="form-footer">
-              <button type="submit">Tweet</button>
-              <output name="counter" class="counter" for="tweet-text"></output>
-            </div>
-          </form>
-        </section>
+          <div class="horiz-line"></div>
 
-        <div id="tweets-container">
-      </main>
-    </div>
+          <div class="form-footer">
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text"></output>
+          </div>
+        </form>
+      </section>
+
+      <div id="tweets-container">
+      </div>
+      
+    </main>
 
   </div>
 </body>
