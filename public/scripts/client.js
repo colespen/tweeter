@@ -6,9 +6,6 @@
 
 $(document).ready(function() {
 
-  
-
-
   ////    submit form ajax POST
   $('.new-tweet form').submit(function(event) {
     let serialized = $(this).serialize();
@@ -28,8 +25,8 @@ $(document).ready(function() {
     $('.container > span').slideUp(150);
 
     $.ajax({
+      //tweets route mounted as prefix in index.js
       url: '/tweets',
-      // /tweets route mounted as prefix in index.js
       method: 'POST',
       data: serialized,
 
@@ -61,9 +58,9 @@ $(document).ready(function() {
   };
   loadTweets();
 
-  ////     loops through tweets 
-  ////    calls createTweetElement for each 
-  ////    takes return and appends to container
+  ////    Loops through tweets
+  ////    Calls createTweetElement for each
+  ////    Takes return and appends to container
   const renderTweets = function(tweetArray) {
     for (const tweet of tweetArray) {
 
@@ -72,7 +69,7 @@ $(document).ready(function() {
     }
   };
 
-  ////    XSS Prevention fn
+  ////    XSS Prevention
   const escUser = function(str) {
     let div = document.createElement("span");
     div.appendChild(document.createTextNode(str));
@@ -120,14 +117,9 @@ $(document).ready(function() {
     return $tweetStructure;
   };
 
-////    HIDE FORM then OPEN
-
+  ////    HIDE FORM then OPEN
   $('.new-tweet').hide();
-
-  // $('.navbar-menu li').hover(function() {
-  //   ('.fa-angles-down').toggle( "bounce", { times: 3 }, "slow" );
-  // });
-
+  ////    T0ggle Slide functionality + animate
   $('.navbar-menu li').click(function() {
     $('.new-tweet').slideToggle(550);
   });
