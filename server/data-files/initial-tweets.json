@@ -1,6 +1,17 @@
 [
   {
     "user": {
+      "name": "Descartes",
+      "avatars": "https://i.imgur.com/73hZDYK.png",
+      "handle": "@Beowulf"
+    },
+    "content": {
+      "text": "Je pense , donc je suis"
+    },
+    "created_at": 1665411498818
+  },
+  {
+    "user": {
       "name": "Newton",
       "avatars": "https://i.imgur.com/73hZDYK.png",
       "handle": "@SirIsaac"
@@ -8,17 +19,28 @@
     "content": {
       "text": "If I have seen further it is by standing on the shoulders of giants"
     },
-    "created_at": 1665521303739
+    "created_at": 1665497898818
   },
   {
     "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd"
+      "name": "Uknown Author",
+      "avatars": "../images/wolf-user.png",
+      "handle": "@Ulysses"
     },
     "content": {
-      "text": "Je pense , donc je suis"
+      "text": "Many treasures and precious things from far away were brought there—never was a ship more beautifully equipped"
     },
-    "created_at": 1665607703739
+    "created_at": 1665584298818
+  },
+  {
+    "user": {
+      "name": "James Joyce",
+      "avatars": "https://i.imgur.com/73hZDYK.png",
+      "handle": "@SirIsaac"
+    },
+    "content": {
+      "text": "Staggering bob. Bubble and squeak. Butchers’ buckets wobbly lights."
+    },
+    "created_at": 1665670698818
   }
 ]

@@ -17,6 +17,7 @@ Scroll through with ease on any mobile device, tablet or desktop display, unhide
 - Body-parser
 - Chance
 - Express
+- md5
 - Node 5.10.x or above
 
 ## Enjoy your experience!!!
