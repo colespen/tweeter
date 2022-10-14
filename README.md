@@ -21,4 +21,10 @@ Scroll through with ease on any mobile device, tablet or desktop display, unhide
 
 ## Enjoy your experience!!!
 
+!["view all tweets"](https://github.com/colespen/tweeter/blob/master/docs/tweeter1.png)
+!["compose your tweets"](https://github.com/colespen/tweeter/blob/master/docs/tweeter2.png)
+!["scroll all the way!"])https://github.com/colespen/tweeter/blob/master/docs/tweeter4.png)
+!["try to keep it brief"](https://github.com/colespen/tweeter/blob/master/docs/tweeter3.png)
+!["deskptop view flexibilty!"](https://github.com/colespen/tweeter/blob/master/docs/tweeter5.png)
+
 
