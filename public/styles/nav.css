@@ -82,24 +82,8 @@
   }
 }
 
-/* MEDIA QUERY */
+/* MOBILE MEDIA QUERY */
 
 @media only screen and (max-width: 420px) {
-  .navbar {
-    height: 60px;
-  }
-  .navbar-menu {
-    padding-left: 2%;
-    margin-top: 43px;
-  }
-  .navbar-menu li:first-child {
-    font-size: 87%;
-    padding-top: 9%;
-  }
-  .fa-angles-down {
-    margin-top: 1.5%;
-  }
-  .navbar-logo {
-    margin-bottom: 6%;
-  }
+
 }
