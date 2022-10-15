@@ -10,18 +10,20 @@ $(document).ready(function() {
   $('.new-tweet form').submit(function(event) {
     let serialized = $(this).serialize();
     let input = $(this).find('#tweet-text').val();
-
+    
     event.preventDefault();
     if (!input) {
       const $errNull = $('<span>There\'s nothing here. Please elaborate.</span>').hide();
       $(".container").prepend($errNull);
       return $errNull.slideDown(500);
+     
     }
     if (input.length > 140) {
       const $errLength = $('<span>Too many things. Please write a bit less.</span>').hide();
       $(".container").prepend($errLength);
       return $errLength.slideDown(500);
     }
+    
     $('.container > span').slideUp(150);
 
     $.ajax({
