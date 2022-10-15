@@ -171,6 +171,9 @@ article.tweet footer p {
   .container > span {
     width: 345px;
   }
+  #tweets-container {
+    min-width: 14em;
+  }
   article.tweet p {
     font-size: 17px;
     }
@@ -200,6 +203,7 @@ article.tweet footer p {
      position: fixed;
      height: 100%;
      margin-top: 80px;
+     border-right: 4px solid rgb(0 0 0 / 16%);
     }
     .header-main div {
       margin-top: -30px;
@@ -213,6 +217,9 @@ article.tweet footer p {
       margin-right: 1%;
       width: 100%;
     }
+    #tweets-container {
+      min-width: 27em;
+    }
   }
 
   @media only screen and (min-width: 421px) and (max-width: 1023px) {
@@ -224,5 +231,8 @@ article.tweet footer p {
     }
     .header-main div h2 {
       margin-bottom: 24px;
+    }
+    #tweets-container {
+      min-width: 90%;
     }
   }
