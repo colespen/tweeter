@@ -37,16 +37,15 @@
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
-
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   <script type="text/javascript" src="/scripts/client.js"></script>
+  <script type="text/javascript" src="/scripts/scroll-top.js"></script>
 </head>
 
 <body>
+  <a name="page-top"></a>
   <!-- Top nav bar (fixed) -->
   <nav class="navbar">
     <span class="navbar-logo">tweeter</span>
@@ -88,10 +87,14 @@
 
       <div id="tweets-container">
       </div>
-      
-    </main>
 
+      <a class="scroll-top" href="#page-top">
+        <i class="fa-solid fa-angles-up">
+        </i>
+      </a>
+    </main>
   </div>
+  
 </body>
 
 </html>

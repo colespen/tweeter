@@ -1,8 +1,4 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
+////    Client-side JS logic w jQuery
 
 $(document).ready(function() {
 
@@ -89,7 +85,7 @@ $(document).ready(function() {
   };
 
   ////    takes in tweet obj
-  ////    returns tweet <article>
+  ////    returns tweet <article> as jQuery obj
   const createTweetElement = (tweetObj) => {
     let $tweetStructure =
       $(`
