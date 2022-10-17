@@ -176,7 +176,11 @@ article.tweet footer p {
   }
   article.tweet p {
     font-size: 17px;
-    }
+  }
+  .scroll-top {
+    right: 15%;
+    bottom: 1.5em;
+  }
 }
   
 /* TABLET MEDIA QUERY */

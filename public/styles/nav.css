@@ -58,14 +58,14 @@
 }
 
 .fa-angles-up {
-  color: #000000;
+  color: #440000;
 }
 
 .scroll-top {
   font-size: 28px;
   border-radius: 50%;
-  background-color: #2d3d7152;
-  border: 2px solid #2d3d7119;
+  background-color: #2d3d711f;
+  border: 2px solid #2d3d710a;
   padding-top: 9px;
   padding-bottom: 9px;
   padding-left: 13px;
@@ -76,7 +76,7 @@
 }
 
 .scroll-top:hover {
-  background-color: #2d3d71b3;
+  background-color: #2d3d7165;
 }
 
 

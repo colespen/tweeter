@@ -20,6 +20,10 @@ Scroll through with ease on any mobile device, tablet or desktop display, unhide
 - md5
 - Node 5.10.x or above
 
+## Features
+- toggle input form from button at top
+- after scroll, bottom nav button returns to top
+
 ## Enjoy your experience!!!
 
 !["view all tweets"](https://github.com/colespen/tweeter/blob/master/docs/tweeter1.png)
