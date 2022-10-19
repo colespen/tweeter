@@ -22,7 +22,7 @@ Scroll through with ease on any mobile device, tablet or desktop display, unhide
 
 ## Features
 - toggle input form from button at top
-- after scroll, bottom nav button returns to top
+- bottom nav button appears after scroll and returns to top 
 
 ## Enjoy your experience!!!
 
