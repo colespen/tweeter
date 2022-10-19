@@ -32,7 +32,10 @@ $(document).ready(function() {
         $('#tweets-container').empty();
         loadTweets();
         $('textarea[name="text"]').val('');
+        $('.counter').text('140');
         console.log('ajax POST SUCCESS', data);
+
+        // return $.ajax('/tweets/', { method: 'GET'});
       },
       error: function(errorMessage) {
         console.log('ajax POST ERROR', errorMessage);
