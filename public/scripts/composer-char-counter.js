@@ -4,7 +4,7 @@ $(document).ready(function() {
     let counter = $(this).val().length;
 
     $(this).siblings('.form-footer').children('.counter').text(140 - counter);
-    if (counter < 140) {
+    if (counter <= 140) {
       $('.counter').css("color", "#000000c8");
     }
     if (counter > 140) {

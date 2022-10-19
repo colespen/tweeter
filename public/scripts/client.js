@@ -31,6 +31,7 @@ $(document).ready(function() {
       success: function(data) {
         $('#tweets-container').empty();
         loadTweets();
+        $('textarea[name="text"]').val('');
         console.log('ajax POST SUCCESS', data);
       },
       error: function(errorMessage) {
