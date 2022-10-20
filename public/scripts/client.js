@@ -30,9 +30,9 @@ $(document).ready(function() {
 
       success: function(data) {
         $('#tweets-container').empty();
-        loadTweets();
         $('textarea[name="text"]').val('');
         $('.counter').text('140');
+        loadTweets();
         console.log('ajax POST SUCCESS', data);
 
         // return $.ajax('/tweets/', { method: 'GET'});
