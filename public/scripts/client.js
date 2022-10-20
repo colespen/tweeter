@@ -123,7 +123,7 @@ $(document).ready(function() {
   $('.new-tweet').hide();
   ////    T0ggle Slide functionality + animate
   $('.navbar-menu li').click(function() {
-    $('.new-tweet').slideToggle(550);
+    $('.new-tweet').slideToggle(450);
   });
 
 });
