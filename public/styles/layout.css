@@ -209,9 +209,9 @@ article.tweet footer p {
   }
 
   @media only screen and (min-width: 421px) and (max-width: 1023px) {
-    /* .container {
-      padding-top: 8px;
-    } */
+    .navbar-logo {
+      margin-left: 1%;
+    }
     .navbar-menu {
       padding-left: 45px;
     }
